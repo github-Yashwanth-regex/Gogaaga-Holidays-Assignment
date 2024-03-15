@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="img-icon.png" alt="Gogaga Holidays Icon"/>
+        <h1>Gogaga Holidays</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="packages.html">Holiday Packages</a></li>
+          <li><a href="flights.html">Flight Booking</a></li>
+          <li><a href="hotels.html">Hotel Booking</a></li>
+          <li><a href="collections.html">Package Collections</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2>Find Your Perfect Stay</h2>
+    <div class="booking-section">
+      <div class="search-container">
+        <form action="#" method="GET" class="search-form">
+          <input type="text" name="query" id="query" placeholder="Search hotels..." required>
+          <button type="submit"><img src="search_icon.png" alt="Search"></button>
+        </form>
+      </div>
+
+      <div class="booking-form">
+        <h3>Book Your Stay</h3>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="card-number">Credit Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required>
+          </div>
+
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <h2>Popular Hotels</h2>
+      <div class="hotel-images">
+        <img src="hotel1.jpg" alt="Hotel 1" class="hotel">
+        <img src="hotel2.jpeg" alt="Hotel 2" class="hotel">
+        <img src="hotel3.webp" alt="Hotel 3" class="hotel">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

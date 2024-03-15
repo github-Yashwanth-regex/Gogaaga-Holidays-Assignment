@@ -1,0 +1,265 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #1abc9c;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .header-content {
+    text-align: center;
+  }
+  
+  .tagline {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  /* Hero Section Styles */
+  .hero {
+    background-color: #3498db;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .hero h2 {
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Packages Section Styles */
+  .packages {
+    padding: 50px 0;
+  }
+  
+  .packages h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .package-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .package-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .package-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .package-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .package-card p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Testimonials Section Styles */
+  .testimonials {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    margin-bottom: 30px;
+  }
+  
+  /* Call to Action Section Styles */
+  .call-to-action {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .call-to-action h2 {
+    margin-bottom: 20px;
+  }
+  
+  .call-to-action p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #1abc9c;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #f7f7f7;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 10px;
+    }
+  }
+
+  /* Add/Update Button Styles */
+.btn,
+.hero-btn,
+.cta-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1abc9c;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover,
+.hero-btn:hover,
+.cta-btn:hover {
+  background-color: #16a085;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add Hover Effect */
+.btn,
+.hero-btn,
+.cta-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:after,
+.hero-btn:after,
+.cta-btn:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.6s;
+  border-radius: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.btn:hover:after,
+.hero-btn:hover:after,
+.cta-btn:hover:after {
+  width: 0;
+  height: 0;
+}
